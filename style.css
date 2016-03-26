@@ -1,0 +1,176 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body {
+	font-size: 24px;
+	color: #5B4929;
+	font-family:  Copse, Courier, TimesNewRoman, serif;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	text-align: center;
+	line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
+
+.background {
+  background: url(imgs/tree_back.jpg) center center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1;	
+  top: 0;
+  left: 0;
+}
+
+.overlay {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: hsla(180, 49%, 55%, 0.92);
+  z-index: 2;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 3;
+  margin: auto;
+  width: 90%;
+  max-width: 800px;
+}
+
+.screen {
+  padding: 5em 0;
+  position: relative;
+  cursor: pointer;
+}
+  .screen::after,
+  .fact-section:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    content: '';
+  }
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  font-size: 3em;
+  font-weight: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1em;
+  padding: 0;
+  margin: auto;
+}
+
+a {
+  display: inline-block;
+  padding: .05em .25em;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 6px solid transparent;
+  border-top: 6px solid #fff;
+  display: block;
+}
+
+.fact-section {
+  position: relative;
+  padding: 6em 0;
+}
+.fact-section h2::after {
+  display: block;
+  content: '';
+  margin: 1em auto 1.2em;
+  width: 2em;
+  border-radius: 1em;
+  height: 5px;
+  background: #fff;
+}
+.fact-section li {
+  padding-bottom: 1em;
+}
+
+.hidden-today {
+  display: none;
+}
+
+.aside {
+  font-size: .85em;
+  padding-top: 1em;
+  font-style: italic;
+  opacity: .5;
+  margin: auto;
+  max-width: 400px;
+}
+
+.unicorn-item .img-wrapper {
+  max-width: 60%;
+  margin: auto;
+}
+
+.thing-name {
+font-size: 2em;
+border-top: 1px solid;
+padding-top: 1em;
+}
+
+
+.purchase-button {
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: .75em 1em;
+}
+
+
+footer {
+  margin-top: 2em;
+  z-index: 3;
+  position: relative;
+  background: #fff;
+  padding: 3em;
+  font-size: 2em;
+  position: relative;
+  color: hsla(322, 49%, 55%, 0.95);
+}
+
+footer h4 span:nth-child(2n) {
+  opacity: 0.5;
+}
+footer h4 span{
+  display: block;
+  
+}
+
+footer a {
+  color: inherit;
+  font-size: .75em;
+}
